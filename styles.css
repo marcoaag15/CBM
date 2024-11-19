@@ -1,0 +1,97 @@
+/* Ajuste global */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado de height a min-height */
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 20px; /* Para evitar que el contenido quede pegado a los bordes */
+    box-sizing: border-box; /* Para manejar mejor los márgenes y bordes */
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Adaptable al ancho del dispositivo */
+    width: 100%; /* Garantiza el 100% de espacio disponible */
+    overflow: auto; /* Permite hacer scroll si es necesario */
+}
+
+/* Ocultar inicialmente el contenedor del texto correcto */
+.hidden {
+    display: none;
+}
+
+/* Títulos */
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Aumenta la separación entre líneas */
+    margin: 10px 0;
+    text-align: justify; /* Justifica el texto para mayor legibilidad */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan */
+}
+
+/* Campos de texto */
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 90%; /* Adaptable al ancho del contenedor */
+    max-width: 400px; /* No exceder cierto tamaño */
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #ff6a00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background: #e55d00;
+    transform: translateY(-2px);
+}
+
+/* Resultados de validación */
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Soporte adicional para móviles pequeños */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Títulos más pequeños */
+    }
+
+    p {
+        font-size: 14px; /* Texto más pequeño */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
